@@ -1,0 +1,168 @@
+@import "../../variable.scss";
+
+.main-header {
+  text-align: center;
+  // h1 {
+  //   font-size: 55px;
+  //   color: $txt-red;
+  // }
+}
+
+// Home and Support Header
+.top-header {
+  a {
+    color: $txt-grey;
+    text-decoration: none;
+  }
+  span {
+    color: $txt-red;
+  }
+}
+h5 span{
+  color: #A0A0A0;
+    font-family: "dejavu_sansbook" !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    font-weight: 400 !important;
+}
+// Main Section
+.main-section {
+  // padding-bottom: 50px;
+  // h5 {
+  //   font-family: "BebasNeueBook";
+  //   font-weight: normal;
+  //   color: $txt-grey;
+  //   @media (min-width: 1640px) {
+  //     font-size: 32px;
+  //     line-height: 38px;
+  //   }
+  //   @media (min-width: 1200px) and (max-width: 1639px) {
+  //     font-size: 28px;
+  //     line-height: 32px;
+  //   }
+  //   @media (max-width: 1199px) {
+  //     font-size: 20px;
+  //   }
+  //   span {
+  //     font-size: 16px;
+  //     font-family: "dejavu_sansbook";
+  //     font-weight: normal;
+  //     @media (min-width: 320px) and (max-width:480px) {
+  //       display: block;
+  //       margin-top: -12px;
+  //       font-size: 14px;
+  //     }
+  //   }
+  // }
+  // p {
+  //   color: $txt-grey;
+  //   font-size: 18px;
+  //   font-family: "dejavu_sansbook";
+  //   font-weight: normal;
+  // }
+  label {
+    color: $txt-grey;
+  }
+  textarea {
+    resize: none;
+  }
+  @media (max-width:767px){
+  h5 span{
+    display:block;
+  }
+  }
+
+  // Submit Button
+  .btn-submit {
+    border-radius: 8px;
+    font-size: 24px;
+    font-family: "dejavu_sansbook";
+    font-weight: normal;
+    padding: 10px 30px;
+    opacity:.65!important;
+    cursor:all-scroll!important;
+  }
+
+  .btn btn-disabled {
+    opacity: .5!important;
+    cursor: not-allowed!important;
+    border-radius: 8px;
+    font-family: "dejavu_sansbook";
+    font-weight: normal;
+    padding: 10px 30px;
+    border-radius: 4px;
+    background-color: #FF1E38;
+    font-size: 15px;
+    text-align: center;
+    color: #fff;
+    padding: 5px 25px;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disabled), [type="submit"]:not(:disabled)
+  {
+    opacity:1!important;
+    cursor:pointer!important;
+    border-radius: 8px;
+    font-family: "dejavu_sansbook";
+    font-weight: normal;
+    padding: 10px 30px;
+    border-radius: 4px;
+    background-color: #FF1E38;
+    font-size: 15px;
+    text-align: center;
+    color: #fff;
+    padding: 5px 25px;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+  }
+
+}
+
+.wrapper {
+  padding-bottom: 50px;
+  width: 100%;
+  .mt-5 {
+    @media (max-width:480px) {
+      margin-top: .3rem !important;
+    }
+  }
+}
+
+
+.container {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+.arrow-wrapper {
+  position: relative;
+  img {
+    position: absolute;
+    right: 8px;
+    top: 15px;
+  }
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+}
+
+@media (min-width:360px) and (max-width:767px){
+
+p.tab-links {
+    margin-bottom: -6px;
+}
+.main-section {
+
+  margin-bottom: -28px;
+}
+
+}
+

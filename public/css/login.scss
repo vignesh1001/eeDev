@@ -1,0 +1,350 @@
+@import "../../variable.scss";
+.loginsection-two{
+  display: inline;
+
+}
+.mobile-verify{
+  color: $txt-red;
+  text-align: left;
+  padding: .375rem 15px;
+  width:168px;
+}
+  .login .text-danger {
+    color: #dc3545 !important;
+  }
+  .login .form-control.is-invalid {
+      border-color: #dc3545;
+      padding-right: calc(1.5em + .75rem);
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23dc3545' viewBox='0 0 12 12'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
+      background-repeat: no-repeat;
+      background-position: right calc(.375em + .1875rem) center;
+      background-size: calc(.75em + .375rem) calc(.75em + .375rem);
+  }
+  .login h3,.login  h4 {
+      color: #ff1e38;
+      font-family: BebasNeueRegular;
+  }
+  .login .section-one #btn-forgot {
+      font-size: 14px;
+      color: #ff1e38;
+      text-decoration: none;
+      cursor: pointer;
+  }
+  .login .registration-titles {
+      font-size: 36px;
+      line-height: 43px;
+      font-family: BebasNeueRegular;
+      font-weight: 400;
+  }
+  .login .form-control.is-invalid:focus {
+      border-color: #dc3545;
+  }
+  .login :focus {
+      outline: 0;
+      box-shadow: none!important;
+  }
+  
+  .login .dont-have-account {
+      margin-top: 30px;
+      padding-top: 5px;
+      border-top: 1px solid #e5e5e5;
+  }
+  .login .dont-have-account * {
+      margin: 0;
+      padding: 0;
+      line-height: 25px;
+      font-size: 16px;
+  }
+  .login .dont-have-account a{
+      font-weight: 600;
+      text-decoration: underline;
+  }
+  .login .txt-grey {
+      color: #a0a0a0;
+  }
+  .login .txt-red,a.txt-red:hover {
+      color: #ff1e38;
+  }
+  
+  .login .social-login {
+    margin: 15px 0;
+  }
+  .login .social-login button.facebook {
+    background: #3b5998;
+  }
+  .login .social-login button.google {
+    background: #ff1e38;
+  }
+  .login .social-login button:last-child {
+      margin-right: 0;
+  }
+  .login .social-login button,.social-login button:hover {
+      margin-right: 15px;
+      color: #fff;
+  }
+  .login .btn-darkred {
+      border-radius: 8px;
+      background-color: #ff1e38;
+      border: none;
+      font-size: 18px;
+      text-align: center;
+      color: #fff;
+      padding: 5px 25px;
+      outline: 0;
+      position: relative;
+      overflow: hidden;
+  }
+  .login .btn-darkred:hover {
+      opacity: .9;
+      cursor: pointer;
+      color: #fff;
+  }
+  .login .btn-darkred:hover:after {
+      width: 120%;
+      background-color: rgba(255,255,255,0);
+      transition: all .4s ease-in-out;
+  }
+  .login .btn-darkred:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background-color: rgba(255,255,255,.4);
+      transition: none;
+  }
+  .login .custom-control {
+      position: relative;
+      display: block;
+      min-height: 1.5rem;
+      padding-left: 1.5rem;
+  }
+  .login .custom-control-input {
+      position: absolute;
+      z-index: -1;
+      opacity: 0;
+  }
+  
+  .login .section-one label {
+      color: #a0a0a0;
+      font-size: 15px;
+  }
+  .login .custom-control-input:checked~.custom-control-label::before {
+      border-color: #fe1e38!important;
+      background-color: #fe1e38!important;
+  }
+  .login .custom-control-input:checked~.custom-control-label::before {
+      color: #fff;
+  }
+  .login .custom-checkbox .custom-control-label::before {
+      border-radius: .25rem;
+      margin-top: 3px;
+  }
+  .login .custom-checkbox .custom-control-input:checked~.custom-control-label::after {
+      background-color: #ff1e38;
+      border: none;
+  }
+  .login .custom-checkbox .custom-control-input:checked~.custom-control-label::after {
+      // background-image: url('data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='8' heig…M6.564.75l-3.59 3.612-1.538-1.55L0 4.26l2.974 2.99L8 2.193z'/%3e%3c/svg%3e');
+  }
+  .login .custom-checkbox .custom-control-label::after {
+      margin-top: 3px;
+  }
+  .login .custom-control-label::after {
+      position: absolute;
+      top: .25rem;
+      left: -1.5rem;
+      display: block;
+      width: 1rem;
+      height: 1rem;
+      content: "";
+      background: 50%/50% 50% no-repeat;
+      border-radius: 4px;
+  }
+  .custom-checkbox .custom-control-label::before {
+      border-radius: .25rem;
+      margin-top: 3px;
+  }
+  .custom-control-input:focus~.custom-control-label::before {
+      box-shadow: none!important;
+  }
+  .Loginwrapper{
+      padding-bottom: 80px;
+      margin: auto;
+  }
+  .signup-note {
+      margin: 15px 0;
+  }
+  .btn-disabled {
+    opacity: .5!important;
+    cursor: not-allowed!important;
+  }
+  
+  
+  input {
+    outline: none;
+    &:focus {
+      outline: none;
+      border: 1px solid silver;
+      box-shadow: 0 0 6px grey;
+    }
+  }
+  
+  .password1 {
+    position: relative;
+  
+    #pass1 {
+      position: absolute;
+      top: 0;
+      background: transparent;
+      color: transparent;
+    }
+    #pass2 {
+      position: absolute;
+      top: 0;
+      background: transparent;
+      color: transparent;
+    }
+  }
+  
+
+  .one {
+    background: $bgc-red;
+    opacity: 0.4;
+  }
+  
+  .two {
+    background: $bgc-red;
+    opacity: 0.6;
+  }
+  
+  .three {
+    background: $bgc-red;
+  }
+  
+  .four {
+    background: $bgc-darkred;
+  }
+  
+  .one1 {
+    color: $bgc-red;
+  }
+  
+  .two2 {
+    color: $bgc-red;
+  }
+  
+  .three3 {
+    color: $bgc-red;
+  }
+  
+  .four4 {
+    color: $bgc-darkred;
+  }
+  
+  .text-danger{
+    color:$bgc-red
+  }
+  
+  .min_height_form{
+    min-height: auto;
+  }
+  
+  @media(min-width:1024px){
+    .min_height_form{
+      min-height: 750px;
+    }
+  }
+
+ 
+  .logincontainer  {
+    @media (min-width: 991px) {
+      width: 80%;
+      margin: auto;
+    }
+  }
+  input {
+      font-size: 30px;
+      height: 42px;
+      padding: .375rem 5px;
+  }
+  
+  @media (max-width: 576px) {
+    input {
+      font-size: 15px;
+    }
+  }
+  
+  .blinker {
+    color: transparent;
+    text-shadow: 0 0 0 $txt-red;
+  }
+  
+  
+  .email {
+    color: $txt-red;
+    font-size: 28px;
+    @media(max-width:600px){
+      font-size: 22px;
+    }
+  }
+  
+  .mobile-verify{
+    color: $txt-red;
+    text-align: left;
+    padding: .375rem 15px;
+    width:168px;
+  }
+  .stepone-container .form-group{
+    padding-left:0px;
+  }
+  span.inner a {
+    text-decoration: underline;
+  }
+  
+  .verification-box-button {
+    display: flex;
+    align-items: center;
+    span.inner {
+      padding-left: 20px;
+      * {
+        margin: 0;
+        padding: 0;
+        font-size: 15px;
+        line-height: 25px;
+      }
+      span.btn-link {
+        text-decoration: underline;
+        color:$txt-darkgrey;
+        cursor: pointer;
+        font-weight: 900;
+      }
+    }
+    .btn-darkred {
+      flex: none;
+    }  
+  }
+  
+  .stepone-container
+  {
+    margin-top: 50px;
+    // min-height: 450px;
+    @media (max-width:480px) {
+      margin-top: 15px;
+      // min-height: auto;
+  .form-group.inputData {
+      width: 100%;
+  }
+    }
+  }
+  .form-control.mobile-verify:focus {
+    border-color: #ced4da;
+    box-shadow: 0 0 6px 2px rgba(211,211,211,1);
+  }
+  
+  // footer {
+  //   position: absolute !important;
+  //   width: 100% !important;
+  //   bottom:0 !important;
+  // }

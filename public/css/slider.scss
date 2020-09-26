@@ -1,0 +1,405 @@
+@import "../../variable.scss";
+
+@mixin pricelabel() {
+  color: $txt-red;
+  padding-bottom: 8px;
+  font-weight: bolder;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-wrapper {
+  display: flex;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+a:hover{
+  text-decoration: none;
+}
+
+.ribben {
+  
+    background-color: #FF1E38;
+    background-color: #FF1E38;
+    font-size: 12px;
+    color: #fff;
+    padding: 3px;
+    // padding-left: 10px;
+    /* padding-right: 10px; */
+    font-weight: 600;
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+    text-align: center;
+    letter-spacing:1px;
+}
+
+span.price-section {
+    background-color: #ff1e38;
+    color: #fff;
+    padding: 2px 8px 2px 8px;
+    font-size: 14px;
+    height: 30px;
+    width: 30px;
+    border-radius: 4px;
+    margin-top: 0px;
+    float: right;
+}
+
+.slider-heading {
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: 30px;
+  h2 {
+    color: $txt-red;
+    @media (max-width:480px) {
+      font-size: 22px !important;
+    }
+  }
+  @media (max-width:480px){
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.heartIcons {
+    position: absolute;
+    right: -4px;
+    margin-top: -5px;
+    z-index: 100;
+}
+@media (min-width: 2048px){
+
+.heartIcons {
+    position: absolute;
+    right: -4px;
+    margin-top: -5px;
+    z-index: 100;
+}
+}  
+
+.sections {
+  // padding: 0 15px;
+  outline: none;
+  @media (max-width: 350px) {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  &:hover {
+    transition: 0.1s;
+    border: none;
+    cursor: pointer;
+  }
+  .sections-img {
+    height: 81%;
+  }
+}
+
+// h2 {
+//   font-family: "BebasNeueRegular";
+//   font-weight: normal;
+//   @media (min-width: 1640px) {
+//     font-size: 60px;
+//   }
+//   @media (min-width: 1200px) and (max-width: 1639px) {
+//     font-size: 50px;
+//   }
+//   @media (max-width: 1199px) {
+//     font-size: 30px;
+//   }
+// }
+
+.description {
+  // text-align: left;
+  padding: 10px 12px 0 12px;
+  color: $txt-grey;
+  min-height: 100px;
+  background-color: $bgc-lightgrey;
+  align-items: center;
+  display: flex;
+  @media (max-width:767px) {
+    min-width: 175px;
+  }
+  p {
+    margin-bottom: 0;
+    word-break:break-all;
+    min-height: 50px;
+  }
+  .price-label {
+    @include pricelabel();
+    width:100%;
+  }
+}
+
+a {
+  color: $txt-darkred;
+}
+
+a:hover {
+  color: $txt-darkred;
+}
+
+.sliderwrapper {
+  padding-bottom: 50px;
+  @media (max-width:767px) {
+    padding-bottom: 25px;
+    margin: 0;
+  }
+}
+
+.sections-img {
+  position: relative;
+  overflow: hidden;
+
+  .first-opacity {
+    position: absolute;
+    width: 216px;
+    // height: 100%;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.6);
+    @media (min-width: 1601px) {
+      width: 216px;
+    }
+    @media (max-width: 1535px) {
+      width: 210px;
+    }
+    @media (max-width: 1404px) {
+      width: 204px;
+    }
+    @media (max-width: 1200px) {
+      width: 186px;
+    }
+    @media (max-width: 1120px) {
+      display: none;
+    }
+  }
+  
+  .second-opacity {
+    position: absolute;
+    right: 0;
+    width: 216px;
+    // height: 100%;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.6);
+    @media (min-width: 1601px) {
+      width: 216px;
+    }
+    @media (max-width: 1535px) {
+      width: 210px;
+    }
+    @media (max-width: 1404px) {
+      width: 204px;
+    }
+    @media (max-width: 1200px) {
+      width: 186px;
+    }
+    @media (max-width: 1120px) {
+      display: none;
+    }
+  }
+}
+
+.slider-wrapper {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  left: 0;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#left {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform: translateY(-50%);
+  z-index: 2;
+  background: transparent;
+  border: none;
+  color: grey;
+  padding:5px 0;
+}
+#right {
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
+  z-index: 2;
+  background: transparent;
+  border: none;
+  color: grey;
+  padding:5px 0px;
+}
+
+.holder-img {
+  float: left;
+  width: 240px;
+  height: 375px;
+  animation: anim 1s;
+  max-width: initial;
+  
+  flex: 0 0 16.666%;
+  padding: 0 10px;
+  .item-contaner {
+    position: relative;
+    border: 1px solid #e5e5e5;
+    .gift_icon {
+      position: absolute;
+      left: 6px;
+      top: 6px;
+      color: $txt-darkred;
+      font-size: 30px;
+      img {
+        width: 25px;
+        height: auto;
+      }
+    }
+  }
+
+
+
+  img {
+    height: 205px;
+    object-fit: contain;
+  }
+  @media screen and (max-width: 1120px) {
+    max-width: 33.3333%;
+    flex: 0 0 33.3333%;
+  }
+  @media screen and (max-width: 700px) {
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+  @media screen and (max-width: 490px) {
+    // max-width: 100%;
+    // flex: 0 0 100%;
+  }
+}
+
+
+
+
+@keyframes anim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transition: transform 1s ease;
+  }
+}
+
+.img-resp {
+  width: 100%;
+}
+
+.test-wrapper{
+  max-width: 1300px !important;
+  width: 100% !important;
+  margin: auto !important;
+  overflow:hidden;
+}
+
+.container{
+  max-width: 100% !important;
+  width: 100% !important;
+}
+.slider-section .inner-wrap {
+  padding: 0px 30px;
+  position: relative;
+}
+
+@media (max-width:480px) {
+  #left img {
+    width: 66.67%;
+  }
+  #right img {
+      width: 66.67%;
+  }
+  .test-wrapper h2.main-header-regular{
+      padding-top:20px;
+  }
+}
+
+// Swiper css 
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-slide:nth-child(2n) {
+  width: 60%;
+}
+.swiper-slide:nth-child(3n) {
+  width: 40%;
+}
+
+// Most Popular Carousel Slider 
+@media (min-width: 320px) and (max-width: 767px){
+
+.ribben {
+
+    font-size: 12px;
+    z-index: 100;
+    left: 0px;
+}
+
+.heartIcons {
+    position: absolute;
+    right: -5px;
+    margin-top: -5px;
+    z-index: 100;
+}
+.item-contaner {
+    position: relative;
+    border: 1px solid #e5e5e5;
+    .gift_icon {
+      position: absolute;
+      left: 6px;
+      top: 3px;
+      color: $txt-darkred;
+      font-size: 30px;
+      margin-top: -4px;
+      img {
+        width: 25px;
+        height: auto;
+      }
+    }
+  }
+
+}
