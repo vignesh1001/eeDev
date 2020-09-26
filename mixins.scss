@@ -1,0 +1,24 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+@mixin box-shadow($value){
+	-moz-box-shadow:$value;
+	-webkit-box-shadow:$value;
+	box-shadow:$value;
+}
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+@mixin pricelabel() {
+  color: $txt-orange;
+  padding-bottom: 8px;
+  font-weight: bolder;
+}
