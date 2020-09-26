@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 360" width="512" height="360">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #ffffff } 
+	</style>
+	<g id="Layer">
+		<g id="Layer">
+			<g id="Layer">
+				<path id="Layer" class="shp0" d="M179.46 231.2L0 231.2L0 282.4L179.46 282.4L179.46 359.2L281.6 256.8L179.46 154.4L179.46 231.2Z" />
+				<path id="Layer" class="shp0" d="M332.54 77.6L332.54 0.8L230.4 103.2L332.54 205.6L332.54 128.8L512 128.8L512 77.6L332.54 77.6Z" />
+			</g>
+		</g>
+	</g>
+</svg>
